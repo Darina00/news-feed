@@ -1,0 +1,28 @@
+.main-wrapper__protected-news-card {
+    background-color: white;
+    width: 60%;
+    position: relative;
+    margin: 10px 0 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-wrapper__protected-news-card > span {
+    color: rgb(124, 124, 124);
+}
+
+.main-wrapper__protected-news-card > img {
+    width: 40%;
+    padding-right: 10px;
+}
+
+.main-wrapper__protected-news-card > div > span {
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+.main-wrapper__protected-news-card > div > p {
+    font-size: 12pt;
+    margin-top: 10px;
+}

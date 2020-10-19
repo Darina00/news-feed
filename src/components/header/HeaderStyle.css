@@ -1,0 +1,35 @@
+.header-wrapper {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper__logo, .header-wrapper__navigation, .header-wrapper__log {
+    margin: 5px 10px 10px;
+}
+
+.header-wrapper > div {
+    display: flex;
+    align-items: center;
+}
+
+.header-wrapper__logo > a {
+    text-decoration: none;
+    color: white;
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.header-wrapper__navigation > ul > li, .header-wrapper__log {
+    cursor: pointer;
+    font-size: 15pt;
+    color: rgb(177, 177, 177);
+    transition: all 0.3s ease-in-out;
+}
+
+.header-wrapper__navigation > ul > li:hover, .header-wrapper__log:hover {
+    color: white;
+}

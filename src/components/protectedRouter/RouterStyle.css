@@ -1,0 +1,19 @@
+.sorry-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sorry-content > img {
+    width: 40%;
+}
+
+.sorry-content > span {
+    font-size: 15pt;
+}
+
+.sorry-content > span > a {
+    text-decoration: none;
+    color: rgb(255, 0, 170);
+}
