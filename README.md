@@ -14,3 +14,5 @@
     When you click on the "logout" icon in the header, the user's ID is removed from the localstorage.
     
     If you try to enter an invalid URL, a corresponding error message is displayed.
+
+To run the command ***yarn start***
