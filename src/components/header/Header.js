@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header className='header-wrapper'>
             <strong className='header-wrapper__logo'>
-                <a href='/'>NEWShome</a>
+                <Link to='/'>NEWShome</Link>
             </strong>
             <div>
                 <nav className='header-wrapper__navigation'>
@@ -20,7 +20,7 @@ const Header = () => {
                     localStorage.getItem('idUser') ? 
                     <FiLogOut className='header-wrapper__log' onClick={() => {localStorage.clear(); document.location.reload()}} />
                     :
-                    <FiLogIn className='header-wrapper__log' onClick={() => window.location.href = '/login'} />
+                    <Link to="/login"><FiLogIn className='header-wrapper__log' /></Link>
                 }
             </div>
         </header>

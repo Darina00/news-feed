@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import auth from './Auth';
 import Header from '../header/Header';
 import './RouterStyle.css';
@@ -21,7 +21,7 @@ export const ProtectedRoute = ({
                         <Header />
                         <div className='sorry-content'>
                             <img src={require('../../media/sorry.gif')} alt='Sorry' />
-                            <span>Sorry, but you must be <a href='/login'>logged in</a></span>
+                            <span>Sorry, but you must be <Link to='/login'>logged in</Link></span>
                         </div>
                     </>
                 )
