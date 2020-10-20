@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, HashRouter, Route } from 'react-router-dom';
+import { Switch, Router, Route } from 'react-router-dom';
 import { createBrowserHistory as createHistory } from 'history';
 import './App.css';
 import PageReadNews from './components/pages/pageReadNews/PageReadNews';
@@ -12,7 +12,7 @@ import PageNotFound from './components/pages/pageNotFound/PageNotFound';
 function App() {
   return (
     <div className="App">
-      <HashRouter history={createHistory()}>
+      <Router history={createHistory()}>
         <Switch>
           <Route path='/' component={PageReadNews} exact />
           <Route path='/news/:idNews' component={PageOneNews} exact />
@@ -20,7 +20,7 @@ function App() {
           <ProtectedRoute path='/protected-news' component={PageProtectedNews} />
           <Route path='*' component={PageNotFound} />
         </Switch>
-      </HashRouter>
+      </Router>
     </div>
   );
 }

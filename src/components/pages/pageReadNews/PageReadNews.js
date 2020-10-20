@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../../header/Header';
 import { news } from '../../static/static';
 import './PageReadNewsStyle.css';
@@ -11,16 +10,14 @@ const PageReadNews = () => {
             <main className='main-wrapper'>
                 {
                     news.map(item => (
-                        <Link key={item.id} to={`/news/${item.id}`}>
-                            <div className='main-wrapper__news-card'>
-                                <img src={item.photo} alt={item.name} />
-                                <div>
-                                    <span>{item.name}</span>
-                                    <p>{item.shortDescription}</p>
-                                </div>
-                                <span>{item.date}</span>
+                        <div key={item.id} className='main-wrapper__news-card' onClick={() => window.location.href=`/news/${item.id}`}>
+                            <img src={item.photo} alt={item.name} />
+                            <div>
+                                <span>{item.name}</span>
+                                <p>{item.shortDescription}</p>
                             </div>
-                        </Link> 
+                            <span>{item.date}</span>
+                        </div>
                     ))
                 }
             </main>
