@@ -1,6 +1,7 @@
 import React from 'react';
 import './HeaderStyle.css';
 import { FiLogIn, FiLogOut } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -12,7 +13,7 @@ const Header = () => {
                 <nav className='header-wrapper__navigation'>
                     <ul>
                         <hr/>
-                        <li onClick={() => window.location.href='/protected-news'}>Protected News</li>
+                        <Link to="/protected-news"><li>Protected News</li></Link>
                     </ul>    
                 </nav>
                 {
